@@ -1,0 +1,20 @@
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+
+<h1>{{ image.name }}</h1>
+
+<table>
+    <tr>
+        <th>Image Name</th>
+        <th>Tag</th>
+        <th>Digest</th>
+    </tr>
+    <tr>
+        <td>{{ image.name }}</td>
+        <td>{{ image.tag }}</td>
+        <td>{{ image.digest }}</td>
+    </tr>
+</table>

@@ -1,0 +1,6 @@
+<h1>{{ repository.name }}</h1>
+<ul>
+    {% for tag in repository.gettags  %}
+        <li><a href="/registry/{{ repository.name }}/{{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,9 @@
+{% if repositories %}
+    <ul>
+    {% for repository in repositories %}
+        <li><a href="/registry/{{ repository }}/">{{ repository }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No repositories are available.</p>
+{% endif %}
